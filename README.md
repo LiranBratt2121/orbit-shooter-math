@@ -1,18 +1,27 @@
-## Getting Started
+# FRC Rapid React: Adjustable Hood - Theoretical Calculations for 100% Toss Rate
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+![image](https://github.com/LiranBratt2121/orbit-shooter-math/assets/95234790/1fbd3fa6-065a-44d2-aad0-038789fa7a71)
 
-## Folder Structure
 
-The workspace contains two folders by default, where:
+## Description
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+This repository contains the theoretical calculations for achieving a 100% toss rate in the FRC Rapid React game. The calculations are specifically focused on the adjustment of the hood angle to optimize the shooting performance.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+## Variables
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+- **dx**: Distance from the basket.
+- **dy**: Constant height difference between the shooter and the basket.
+- **V**: Constant linear velocity at which the ball is shot.
+- **k**: Constant used in the calculation, determined as (4.9 * dx²) / V².
 
-## Dependency Management
+## Calculation Formula
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+![image](https://github.com/LiranBratt2121/orbit-shooter-math/assets/95234790/ad0fafe7-8bbc-4b71-9222-006d1618455e)
+
+## Assumptions
+
+For the purpose of simplicity, this calculation does not consider the drag force and the Magnus effect.
+
+## Usage
+
+To achieve a successful formula with only one variable, **α** (the angle that the hood should be set to), follow the provided calculation formula. Adjust the hood angle accordingly to optimize the toss rate.
