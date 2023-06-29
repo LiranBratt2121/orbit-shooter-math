@@ -8,7 +8,7 @@ public class App {
             double dx = i;
             double k = (4.9 * dx * dx) / (V * V);
 
-            double a = DY * DY + dx + dx;
+            double a = DY * DY + dx * dx;
             double b = 2 * k * DY - (dx * dx);
             double c = k * k;
 
